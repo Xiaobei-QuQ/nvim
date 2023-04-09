@@ -14,12 +14,12 @@ nmap({
     cmd("Telescope live_grep"),
     opts(noremap, silent),
   },
-  { "<Leader>fp", cmd("Telescope neoclip"), opts(noremap, silent) },
   {
     "<Leader>fs",
-    cmd("Telescope lsp_dynamic_workspace_symbols"),
+    cmd("Telescope find_files"),
     opts(noremap, silent),
   },
+  { "<Leader>fp", cmd("Telescope neoclip"), opts(noremap, silent) },
   {
     "<Leader>fh",
     cmd("Telescope frecency workspace=CWD"),

@@ -14,11 +14,12 @@ function config.vfilter()
       auto_cd = true,
       auto_resize = true,
       keep = true,
-      layout = "floating",
-      columns = "indent,devicons,name,mode,size,time",
+      layout = "left",
+      columns = "indent,devicons,name",
       listed = false,
       blend = 30,
       session = "share",
+      width = 30,
     },
   })
 end

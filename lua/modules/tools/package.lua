@@ -28,7 +28,7 @@ package({ "akinsho/nvim-toggleterm.lua", config = conf.toggleterm })
 package({ "tpope/vim-surround" })
 package({ "b3nj5m1n/kommentary" })
 package({ "FotiadisM/tabset.nvim", config = conf.tabset })
-package({ "wakatime/vim-wakatime" })
+-- package({ "wakatime/vim-wakatime" })
 package({ "mg979/vim-visual-multi" })
 package({
   "sindrets/diffview.nvim",
@@ -51,3 +51,7 @@ package({
 })
 -- hop
 package({ "phaazon/hop.nvim", branch = "v2", config = conf.hop })
+-- copilot
+package({ "github/copilot.vim", config = conf.shfmt })
+-- null-ls
+package({ "jose-elias-alvarez/null-ls.nvim", config = conf.null_ls })

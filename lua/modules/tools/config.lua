@@ -76,7 +76,7 @@ function config.neoscroll()
 end
 
 function config.toggleterm()
-  require("toggleterm").setup({ shell = "/bin/bash" })
+  require("toggleterm").setup({ shell = "/bin/zsh" })
   if vim.fn.executable("lazygit") > 0 then
     vim.cmd(
       [[command! Lazygit lua require("toggleterm.terminal").Terminal:new({cmd="lazygit", hidden=true, direction="float"}):toggle()]]
@@ -269,6 +269,27 @@ end
 
 function config.frecency()
   require("telescope").load_extension("frecency")
+end
+
+function config.copilot()
+  require('copilot').setup({})
+end
+
+function config.null_ls()
+  require("null-ls").setup({
+    sources = {
+      require("null-ls").builtins.formatting.stylua,
+      require("null-ls").builtins.formatting.prettier,
+      require("null-ls").builtins.formatting.eslint_d,
+      require("null-ls").builtins.formatting.shfmt,
+      require("null-ls").builtins.formatting.black,
+      require("null-ls").builtins.formatting.gofmt,
+      require("null-ls").builtins.formatting.goimports,
+      require("null-ls").builtins.formatting.rustfmt,
+      require("null-ls").builtins.formatting.sqlformat,
+      require("null-ls").builtins.formatting.trim_whitespace
+    },
+  })
 end
 
 return config

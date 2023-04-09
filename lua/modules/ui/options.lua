@@ -24,7 +24,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = false
 vim.opt.belloff = "all"
-vim.opt.shell = "bash"
+vim.opt.shell = "zsh"
 
 vim.wo.signcolumn = "yes"
 vim.opt.mouse = nil

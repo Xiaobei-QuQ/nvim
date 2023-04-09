@@ -35,5 +35,5 @@ package({
   config = conf.nvim_lspconfig,
 })
 package({ "mfussenegger/nvim-dap", config = conf.dap })
-package({ "yuchanns/phpfmt.nvim", config = conf.phpfmt })
-package({ "yuchanns/shfmt.nvim", config = conf.shfmt })
+-- package({ "yuchanns/phpfmt.nvim", config = conf.phpfmt })
+-- package({ "yuchanns/shfmt.nvim", config = conf.shfmt })
